@@ -1,8 +1,12 @@
 [package]
 name = "proverbilo"
+description = "Programo por montri hazardajn proverbojn en Esperanto."
 version = "0.1.0"
-authors = ["Lucas Rooyakkers <lucas.rooyakkers@protonmail.com>"]
+authors = ["Lucas Rooyakkers <lucas.rooyakkers@protonmail.com>", "Mark Wootton <wootton.mj@gmail.com>"]
 edition = "2018"
+homepage = "https://github.com/Fierthraix/proverbilo"
+repository = "https://github.com/Fierthraix/proverbilo.git"
+license = "GPL-3.0-or-later"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
