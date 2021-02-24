@@ -11,18 +11,12 @@ struct Argumentujo {
 }
 
 fn main() {
-    // Akiri proverbojn el tekstdosiero.
-    let proverbaro = include_str!("../proverbaro.txt").split('\n');
-
-    // Atingi argumentojn el la uzanto.
-    let argumentoj = Argumentujo::from_args();
-
-    // Elekti hazarda(j)n proverbo(j)n.
-    let proverboj_printotaj =
-        proverbaro.choose_multiple(&mut SmallRng::from_entropy(), argumentoj.nombro);
-
-    // Printi la proverbojn.
-    for proverbo in proverboj_printotaj {
-        println!("{}", proverbo);
-    }
+    include_str!("../proverbaro.txt")
+        .split('\n')
+        .choose_multiple(&mut SmallRng::from_entropy(), Argumentujo::from_args().nombro)
+        .iter()
+        .filter(|proverbo| {
+            println!("{}", proverbo);
+            false
+        }).next();
 }
