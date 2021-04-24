@@ -12,6 +12,15 @@ Karaktero olea
 Malsaĝulo en foiro estas bona akiro
 Lerteco sorĉon ne bezonas
 ```
+#### Ekprintu proverbon kiam malfermas terminalon:
+Eki la progragam ĉiufoje kiam oni ensalutas terminal per aldono de ĉi-tiu linio en la dosiero `~/.bashrc` (aŭ `~/.zshrc`, se uzas oni tion).
+```bash
+# ~/.bashrc
+#...
+
+# Ĉe le fin' de l'dosiero: 
+proverbilo
+```
 
 ## Instalado
 ### [`cargo`](https://doc.rust-lang.org/cargo/)
