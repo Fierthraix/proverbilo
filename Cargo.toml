@@ -1,7 +1,7 @@
 [package]
 name = "proverbilo"
 description = "Programo por montri hazardajn proverbojn en Esperanto."
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Lucas Rooyakkers <lucas.rooyakkers@protonmail.com>", "Mark Wootton <wootton.mj@gmail.com>"]
 edition = "2018"
 homepage = "https://github.com/Fierthraix/proverbilo"
