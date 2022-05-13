@@ -1,8 +1,9 @@
 use pico_args::Arguments as Argumentoj;
 
 use rand::rngs::SmallRng as Hazardileto;
-use rand::seq::IteratorRandom;
 use rand::SeedableRng;
+
+use rand::prelude::SliceRandom;
 
 const HELPO: &str = r#"
 UZADO:
@@ -14,6 +15,8 @@ ARGOJ:
 FLAGOJ:
     -h, --helpo      Printas help-informon.
 "#;
+
+include!(concat!(env!("OUT_DIR"), "/proverbaro.rs"));
 
 fn parsu_argumentojn() -> usize {
     let mut argumentoj = Argumentoj::from_env();
@@ -36,14 +39,11 @@ fn parsu_argumentojn() -> usize {
 }
 
 fn main() {
-    // Akiri proverbojn el tekstdosiero.
-    let proverbaro = include_str!("../proverbaro.txt").split('\n');
-
     // Akiri la nombron da proverbo printi el la uzanto.
     let nombro = parsu_argumentojn();
 
     // Elekti hazarda(j)n proverbo(j)n.
-    let proverboj_printotaj = proverbaro.choose_multiple(&mut Hazardileto::from_entropy(), nombro);
+    let proverboj_printotaj = PROVERBARO.choose_multiple(&mut Hazardileto::from_entropy(), nombro);
 
     // Printi la proverbojn.
     for proverbo in proverboj_printotaj {

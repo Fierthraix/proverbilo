@@ -3,8 +3,8 @@ Versio de [ProverbMontrilo](https://github.com/MJWootton/ProverbaroMontrilo) ver
 
 Montras hazardajn proverbaojn kaj diraĵojn en terminalo.
 
-### Uzo 
-```
+### Uzado 
+```bash
 $ proverbilo 5
 Petolu, diboĉu, sed poste sorton ne riproĉu
 Fari aplaŭdon sur la vangon
@@ -12,8 +12,8 @@ Karaktero olea
 Malsaĝulo en foiro estas bona akiro
 Lerteco sorĉon ne bezonas
 ```
-#### Ekprintu proverbon kiam malfermas terminalon:
-Eki la progragam ĉiufoje kiam oni ensalutas terminal per aldono de ĉi-tiu linio en la dosiero `~/.bashrc` (aŭ `~/.zshrc`, se uzas oni tion).
+#### Ekprintu proverbon kiam malfermas terminalo:
+Ekalvoki la progragam ĉiufoje kiam oni ensalutas terminalon per aldono de ĉi-tiu linio ĉe la fino de la dosiero `~/.bashrc` (aŭ `~/.zshrc`, se uzas oni tion).
 ```bash
 # ~/.bashrc
 #...
