@@ -16,7 +16,7 @@ fn main() -> io::Result<()> {
 
     writeln!(
         dosiero,
-        "const PROVERBARO: [&str; {}] = [",
+        "static PROVERBARO: [&str; {}] = [",
         proverbaro.len()
     )?;
     for proverbo in &proverbaro {
