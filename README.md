@@ -1,4 +1,11 @@
 # Proverbilo
+
+[![CI](https://github.com/Fierthraix/proverbilo/actions/workflows/ci.yml/badge.svg)](https://github.com/Fierthraix/proverbilo/actions/workflows/ci.yml)
+[![Crates.io](https://img.shields.io/crates/v/proverbilo.svg)](https://crates.io/crates/proverbilo)
+[![Downloads](https://img.shields.io/crates/d/proverbilo.svg)](https://crates.io/crates/proverbilo)
+[![Docs.rs](https://docs.rs/proverbilo/badge.svg)](https://docs.rs/proverbilo)
+[![License](https://img.shields.io/crates/l/proverbilo.svg)](Cargo.toml)
+
 Versio de [ProverbMontrilo](https://github.com/MJWootton/ProverbaroMontrilo) verkita per [Rust](https://www.rust-lang.org/).
 
 Montras hazardajn proverbaojn kaj diraĵojn en terminalo.
