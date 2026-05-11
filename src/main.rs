@@ -1,9 +1,6 @@
 use pico_args::Arguments as Argumentoj;
 
-use rand::rngs::SmallRng as Hazardileto;
-use rand::SeedableRng;
-
-use rand::prelude::SliceRandom;
+use rand::prelude::IndexedRandom;
 
 const HELPO: &str = r#"
 UZADO:
@@ -43,7 +40,8 @@ fn main() {
     let nombro = parsu_argumentojn();
 
     // Elekti hazarda(j)n proverbo(j)n.
-    let proverboj_printotaj = PROVERBARO.choose_multiple(&mut Hazardileto::from_entropy(), nombro);
+    let mut hazardilo = rand::rng();
+    let proverboj_printotaj = PROVERBARO.sample(&mut hazardilo, nombro);
 
     // Printi la proverbojn.
     for proverbo in proverboj_printotaj {
