@@ -1,0 +1,19 @@
+pkgbase = proverbilo-bin
+	pkgdesc = Programo por montri hazardajn proverbojn en Esperanto
+	pkgver = 0.1.8
+	pkgrel = 1
+	url = https://github.com/Fierthraix/proverbilo
+	arch = x86_64
+	arch = aarch64
+	license = GPL-3.0-or-later
+	depends = gcc-libs
+	depends = glibc
+	provides = proverbilo
+	conflicts = proverbilo
+	conflicts = proverbilo-git
+	source_x86_64 = https://github.com/Fierthraix/proverbilo/releases/download/v0.1.8/proverbilo-0.1.8-x86_64-unknown-linux-gnu.tar.gz
+	sha256sums_x86_64 = SKIP
+	source_aarch64 = https://github.com/Fierthraix/proverbilo/releases/download/v0.1.8/proverbilo-0.1.8-aarch64-unknown-linux-gnu.tar.gz
+	sha256sums_aarch64 = SKIP
+
+pkgname = proverbilo-bin
