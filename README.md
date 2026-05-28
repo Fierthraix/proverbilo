@@ -35,21 +35,41 @@ proverbilo
 
 ## Installation
 
+### Cargo
+
 ```bash
 cargo install proverbilo
+```
+
+### Arch Linux / AUR
+
+```bash
 yay -S proverbilo
 yay -S proverbilo-bin
 yay -S proverbilo-git
-brew tap Fierthraix/tap
-brew install --cask proverbilo
-nix run github:Fierthraix/nur-packages#proverbilo
 ```
+
+### macOS / Homebrew
+
+```zsh
+brew install --cask Fierthraix/tap/proverbilo
+```
+
+### Windows / Scoop
 
 ```powershell
 scoop bucket add fierthraix https://github.com/Fierthraix/scoop-bucket
 scoop install proverbilo
 ```
 
+### Nix
+
+```bash
+nix profile install github:Fierthraix/nur-packages#proverbilo
+```
+
+### Release Assets
+
 ```text
-deb/rpm/apk/tar/zip: https://github.com/Fierthraix/proverbilo/releases
+https://github.com/Fierthraix/proverbilo/releases/latest
 ```
